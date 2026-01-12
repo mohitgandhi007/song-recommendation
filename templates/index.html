@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Music Recommender</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <main class="app-container">
+
+    <section class="phone">
+
+      <header class="header">
+        <h1>AI Music</h1>
+        <p>Your vibe. Our AI.</p>
+      </header>
+
+      <section class="inputs">
+        <input id="genre" placeholder="Genre (Pop, Hip-Hop)" />
+        <input id="mood" placeholder="Mood (Chill, Energetic)" />
+        <input id="artists" placeholder="Artists (Weeknd, Drake)" />
+      </section>
+
+      <button id="btn" onclick="getSongs()">Discover</button>
+
+      <!-- RESULTS (INSIDE PHONE) -->
+      <section class="results">
+        <h3 class="results-title" style="display:none;">Recommended for you</h3>
+        <section id="list" class="list"></section>
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
